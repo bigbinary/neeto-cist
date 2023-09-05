@@ -1,0 +1,15 @@
+public
+coverage
+db
+docs
+log
+.semaphore
+test
+tmp
+.vscode
+babel.config.js
+app/javascript/packs
+rollup.config.js
+tailwind.config.js
+.eslintrc.js
+.prettierrc.js
