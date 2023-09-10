@@ -1,4 +1,4 @@
-# neeto-utils
+# neeto-cist
 
 A library encapsulating common boilerplate frontend code required for all neeto
 products.
@@ -82,7 +82,7 @@ Category
 Install from npm:
 
 ```bash
-yarn add "@bigbinary/neeto-utils@latest"
+yarn add "@bigbinary/neeto-cist@latest"
 ```
 
 ## Usage

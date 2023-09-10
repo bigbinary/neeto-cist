@@ -14,10 +14,10 @@ failsafe alternative function will be prefixed with `_`. Example:
 
 ## Usage
 
-You can import all functions from `@bigbinary/neeto-utils`.
+You can import all functions from `@bigbinary/neeto-cist`.
 
 ```js
-import { slugify } from "@bigbinary/neeto-utils";
+import { slugify } from "@bigbinary/neeto-cist";
 ```
 
 ## Available functions
