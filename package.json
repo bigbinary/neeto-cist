@@ -1,8 +1,8 @@
 {
-  "name": "@bigbinary/neeto-utils",
+  "name": "@bigbinary/neeto-cist",
   "version": "1.0.0",
   "description": "A package encapsulating common utility functions used across neeto projects.",
-  "repository": "git@github.com:bigbinary/neeto-utils.git",
+  "repository": "git@github.com:bigbinary/neeto-cist.git",
   "license": "apache-2.0",
   "bin": {
     "dead-code-eliminator": "./configs/scripts/dead-code-eliminator/index.js",

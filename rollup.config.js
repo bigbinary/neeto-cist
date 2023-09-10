@@ -14,10 +14,10 @@ import packageJSON from "./package.json";
 const rootResolve = require("./resolve.js");
 
 const globals = Object.fromEntries(
-  keys(packageJSON.peerDependencies).map((lib) => [lib, lib])
+  keys(packageJSON.peerDependencies).map(lib => [lib, lib])
 );
 
-export default ["index"].map((file) => ({
+export default ["index"].map(file => ({
   input: `./src/${file}.js`,
   output: [
     {
@@ -25,7 +25,7 @@ export default ["index"].map((file) => ({
       file: `${file}.cjs.js`,
       format: "cjs",
       sourcemap: true,
-      name: `neeto-utils/${file}`,
+      name: `neeto-cist/${file}`,
       globals,
     },
     {
@@ -33,7 +33,7 @@ export default ["index"].map((file) => ({
       file: `${file}.js`,
       format: "esm",
       sourcemap: true,
-      name: `neeto-utils/${file}`,
+      name: `neeto-cist/${file}`,
       globals,
     },
   ],
