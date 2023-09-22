@@ -112,3 +112,9 @@ dump.rdb
 # Ignore yalc generated files
 yalc.lock
 /.yalc
+
+/index.cjs.js
+/index.cjs.js.map
+/index.js
+/index.js.map
+/index.d.ts
