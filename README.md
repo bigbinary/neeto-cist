@@ -1,7 +1,21 @@
 # neeto-cist
 
-A library encapsulating common boilerplate frontend code required for all neeto
-products.
+A collection of common utility functions used across all our
+[neeto](https://neeto.com) products
+
+## Installation Instructions
+
+Install from npm:
+
+```bash
+yarn add @bigbinary/neeto-cist
+```
+
+Install the peer dependencies:
+
+```bash
+yarn add ramda
+```
 
 <table>
 <thead>
