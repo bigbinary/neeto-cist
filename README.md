@@ -1,5 +1,7 @@
 # neeto-cist
 
+[![BuildStatus](https://neeto-engineering.neetoci.com/badges/neeto-cist/workflows/default.svg)](https://neeto-engineering.neetoci.com/projects/neeto-cist)
+
 A collection of common utility functions used across all our
 [neeto](https://neeto.com) products
 

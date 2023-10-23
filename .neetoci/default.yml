@@ -1,6 +1,7 @@
 version: v1.0
+
 plan: standard-2
-name: neetoCi
+
 global_job_config:
   setup:
     - checkout
@@ -12,4 +13,10 @@ global_job_config:
     - name: CiChecks
       commands:
         - .scripts/run_eslint_on_modified_files.sh
+        - npx neeto-audit-frontend
         - yarn test
+
+triggers:
+  - event: branch
+    branch_name: main
+  - event: pull_request
