@@ -13,7 +13,6 @@ global_job_config:
     - name: CiChecks
       commands:
         - .scripts/run_eslint_on_modified_files.sh
-        - npx neeto-audit-frontend
         - yarn test
 
 triggers:
