@@ -33,40 +33,6 @@
       ".scripts/fix-lints.sh"
     ]
   },
-  "exports": {
-    "./react-utils": {
-      "import": "./react-utils.js",
-      "require": "./react-utils.cjs.js",
-      "types": "./react-utils.d.ts"
-    },
-    "./cypress-utils": {
-      "import": "./cypress-utils.js",
-      "require": "./cypress-utils.cjs.js",
-      "types": "./cypress-utils.d.ts"
-    },
-    "./utils": {
-      "import": "./utils.js",
-      "require": "./utils.cjs.js",
-      "types": "./utils.d.ts"
-    },
-    "./pure": {
-      "import": "./pure.js",
-      "require": "./pure.cjs.js",
-      "types": "./pure.d.ts"
-    },
-    "./initializers": {
-      "import": "./initializers.js",
-      "require": "./initializers.cjs.js",
-      "types": "./initializers.d.ts"
-    },
-    "./constants": {
-      "import": "./constants.js",
-      "require": "./constants.cjs.js",
-      "types": "./constants.d.ts"
-    },
-    "./configs/*": "./configs/*",
-    "./cypress-configs/*": "./cypress-configs/*"
-  },
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/eslint-parser": "7.17.0",
