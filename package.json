@@ -131,8 +131,5 @@
   },
   "peerDependencies": {
     "ramda": "^0.29.0"
-  },
-  "dependencies": {
-    "@bigbinary/neeto-audit-frontend": "^2.0.1"
   }
 }
