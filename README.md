@@ -19,17 +19,15 @@ Install the peer dependencies:
 yarn add ramda
 ```
 
+
+## List of Pure Functions
+
 <table>
 <thead>
 <tr>
 <th>
 
 Name
-
-</th>
-<th>
-
-Category
 
 </th>
 </tr>
@@ -82,11 +80,6 @@ Category
 - [isNotEqualDeep (alias notEqualsDeep)](./docs/pure/general.md#isnotequaldeep_alias_notequalsdeep)
 
 </td>
-<td style="vertical-align: top;">
-
-[Pure utility functions](./docs/pure/README.md)
-
-</td>
 </tr>
 
 <tr></tr>
@@ -103,10 +96,7 @@ yarn add "@bigbinary/neeto-cist@latest"
 
 ## Usage
 
-This package exports five different sets of functions and components. Click on
-them to read more:
-
-3. [Pure utility functions](./docs/pure/README.md)
+[Pure utility functions](./docs/pure/README.md)
 
 ## Other references
 
