@@ -11,7 +11,8 @@
   "exports": {
     ".": {
       "import": "./index.js",
-      "require": "./index.cjs.js"
+      "require": "./index.cjs.js",
+      "types": "./index.d.ts"
     }
   },
   "scripts": {
