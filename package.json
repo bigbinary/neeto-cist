@@ -8,6 +8,12 @@
     "dead-code-eliminator": "./configs/scripts/dead-code-eliminator/index.js",
     "remove-unused-translation-keys": "./configs/scripts/remove-unused-translation-keys/index.js"
   },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs.js"
+    }
+  },
   "scripts": {
     "prepare": "husky install",
     "sync_with_wheel": "./.scripts/sync_with_wheel.sh",
