@@ -96,7 +96,23 @@ yarn add "@bigbinary/neeto-cist@latest"
 
 ## Usage
 
-[Pure utility functions](./docs/pure/README.md)
+You can import all functions from `@bigbinary/neeto-cist`.
+
+```js
+import { slugify } from "@bigbinary/neeto-cist";
+```
+
+Exports several general utility functions that are used throughout neeto
+products. The functions are designed in a similar fashion as ramda so that they
+can easily interoperate with each other.
+
+Pure functions were designed to be fail fast. If you call `findById(10, null)`,
+it will throw error saying that it can't iterate through `null`.
+
+But for most such pure functions, there is a failsafe alternative available. The
+failsafe alternative function will be prefixed with `_`. Example:
+`_findById(10, null)` returns `null`, `_findById(10, undefined)` returns
+`undefined` and `_findById(10, [{ id: 10 }])` returns `{ id: 10 }`.
 
 ## Other references
 
