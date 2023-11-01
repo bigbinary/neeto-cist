@@ -341,3 +341,12 @@ export function nullSafe<T extends Function>(
 
 export function isNotPresent(object: any): boolean;
 export function isPresent(object: any): boolean;
+
+export function modifyWithImmer<T>(
+  modifier: (draft: Draft<T>) => void,
+  data: T
+): T;
+
+export function modifyWithImmer<T>(
+  modifier: (draft: Draft<T>) => void
+): (data: T) => T;

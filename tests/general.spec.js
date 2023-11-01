@@ -12,6 +12,7 @@ import {
   randomPick,
   toLabelAndValue,
   nullSafe,
+  modifyWithImmer,
 } from "src/general";
 
 describe("General functions", () => {
@@ -136,5 +137,22 @@ describe("General functions", () => {
     expect(isPresent([1])).toBe(true);
     expect(isPresent(undefined)).toBe(false);
     expect(isPresent(null)).toBe(false);
+  });
+
+  test("modifyWithImmer() should not mutate the original value", () => {
+    const state = [{ name: "Oliver" }, { name: "Eve" }];
+    const nextState = modifyWithImmer(data => {
+      data[0].name = "Oliver smith";
+    })(state);
+    expect(nextState).not.toBe(state);
+  });
+
+  test("modifyWithImmer() should work on objects", () => {
+    const state = { name: "Oliver" };
+    expect(
+      modifyWithImmer(data => {
+        data.name = "Oliver smith";
+      })(state)
+    ).toStrictEqual({ name: "Oliver smith" });
   });
 });

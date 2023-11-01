@@ -1,3 +1,5 @@
+import { produce } from "immer";
+
 import {
   complement,
   curry,
@@ -13,7 +15,7 @@ import {
  * @param {T} func
  * @returns {T}
  */
-export const nullSafe = (func) =>
+export const nullSafe = func =>
   // @ts-ignore
   curryN(func.length, (...args) => {
     const dataArg = args[func.length - 1];
@@ -23,7 +25,7 @@ export const nullSafe = (func) =>
 
 export const noop = () => {};
 
-export const toLabelAndValue = (string) => ({ label: string, value: string });
+export const toLabelAndValue = string => ({ label: string, value: string });
 
 // eslint-disable-next-line default-param-last
 export const getRandomInt = (a = Number.MAX_SAFE_INTEGER, b) => {
@@ -57,3 +59,7 @@ export const isPresent = /*#__PURE__*/ complement(isNotPresent);
 
 export const notEqualsDeep = /*#__PURE__*/ complement(equals);
 export const isNotEqualDeep = notEqualsDeep;
+
+export const modifyWithImmer = /*#__PURE__*/ curry((modifier, data) =>
+  produce(data, modifier)
+);
