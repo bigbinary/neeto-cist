@@ -28,7 +28,7 @@ export const transformObjectDeep = (
   }
 
   if (Array.isArray(object)) {
-    return object.map((obj) =>
+    return object.map(obj =>
       transformObjectDeep(obj, keyValueTransformer, objectPreProcessor)
     );
   } else if (object === null || typeof object !== "object") {
@@ -45,33 +45,29 @@ export const transformObjectDeep = (
   );
 };
 
-export const keysToCamelCase = (object) =>
+export const keysToCamelCase = object =>
   transformObjectDeep(object, (key, value) => [snakeToCamelCase(key), value]);
 
-export const keysToSnakeCase = (object) =>
+export const keysToSnakeCase = object =>
   transformObjectDeep(object, (key, value) => [camelToSnakeCase(key), value]);
 
-export const serializeKeysToSnakeCase = (object) =>
+export const serializeKeysToSnakeCase = object =>
   transformObjectDeep(
     object,
     (key, value) => [camelToSnakeCase(key), value],
-    (object) =>
-      typeof object?.toJSON === "function" ? object.toJSON() : object
+    object => (typeof object?.toJSON === "function" ? object.toJSON() : object)
   );
 
-export const preprocessForSerialization = (object) =>
+export const preprocessForSerialization = object =>
   transformObjectDeep(
     object,
     (key, value) => [key, value],
-    (object) =>
-      typeof object?.toJSON === "function" ? object.toJSON() : object
+    object => (typeof object?.toJSON === "function" ? object.toJSON() : object)
   );
 
-export const deepFreezeObject = (object) => {
+export const deepFreezeObject = object => {
   if (object && typeof object === "object" && !Object.isFrozen(object)) {
-    Object.keys(object).forEach((property) =>
-      deepFreezeObject(object[property])
-    );
+    Object.keys(object).forEach(property => deepFreezeObject(object[property]));
     Object.freeze(object);
   }
 
@@ -82,7 +78,7 @@ export const matches = /*#__PURE__*/ curry((pattern, object) =>
   matchesImpl(pattern, object)
 );
 
-export const filterNonNull = (object) =>
+export const filterNonNull = object =>
   Object.fromEntries(
     Object.entries(object)
       .filter(([, v]) => !isNil(v))
