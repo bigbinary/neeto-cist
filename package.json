@@ -71,7 +71,7 @@
     "@testing-library/user-event": "13.5.0",
     "antd": "4.24.3",
     "autoprefixer": "^10.4.13",
-    "axios": "0.27.2",
+    "axios": "1.6.0",
     "babel-jest": "27.0.6",
     "babel-loader": "^8.2.5",
     "babel-plugin-dynamic-import-node": "^2.3.3",
