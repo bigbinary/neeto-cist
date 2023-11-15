@@ -3,7 +3,8 @@
 [![BuildStatus](https://neeto-engineering.neetoci.com/badges/neeto-cist/workflows/default.svg)](https://neeto-engineering.neetoci.com/projects/neeto-cist)
 
 A collection of common utility functions used across all our
-[neeto](https://neeto.com) products
+[neeto](https://neeto.com) products. Try out the utility functions live at
+[neetoCommons REPL](https://neeto-cist.neeto.com/).
 
 ## Installation Instructions
 
@@ -18,7 +19,6 @@ Install the peer dependencies:
 ```bash
 yarn add ramda
 ```
-
 
 ## List of Pure Functions
 
