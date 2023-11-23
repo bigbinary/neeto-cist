@@ -17,23 +17,23 @@ const globals = Object.fromEntries(
   keys(packageJSON.peerDependencies).map(lib => [lib, lib])
 );
 
-export default ["index"].map(file => ({
-  input: `./src/${file}.js`,
+export default {
+  input: `./src/index.js`,
   output: [
     {
       inlineDynamicImports: true,
-      file: `${file}.cjs.js`,
+      file: `index.cjs.js`,
       format: "cjs",
       sourcemap: true,
-      name: `neeto-cist/${file}`,
+      name: `neeto-cist/index`,
       globals,
     },
     {
       inlineDynamicImports: true,
-      file: `${file}.js`,
+      file: `index.mjs`,
       format: "esm",
       sourcemap: true,
-      name: `neeto-cist/${file}`,
+      name: `neeto-cist/index`,
       globals,
     },
   ],
@@ -41,8 +41,8 @@ export default ["index"].map(file => ({
     // To delete previously existing bundle.
     cleaner({
       targets: [
-        path.resolve(__dirname, `${file}.esm.js`),
-        path.resolve(__dirname, `${file}.js`),
+        path.resolve(__dirname, `index.esm.js`),
+        path.resolve(__dirname, `index.js`),
       ],
     }),
     // Analyze created bundle.
@@ -65,4 +65,4 @@ export default ["index"].map(file => ({
     // To convert CommonJS modules to ES6.
     commonjs(),
   ],
-}));
+};

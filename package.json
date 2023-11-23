@@ -10,7 +10,7 @@
   },
   "exports": {
     ".": {
-      "import": "./index.js",
+      "import": "./index.mjs",
       "require": "./index.cjs.js",
       "types": "./index.d.ts"
     }
@@ -29,7 +29,7 @@
     "yarn": ">=1.22"
   },
   "files": [
-    "index.js",
+    "index.mjs",
     "index.js.map",
     "index.cjs.js",
     "index.cjs.js.map",
