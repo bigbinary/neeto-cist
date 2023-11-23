@@ -30,7 +30,7 @@
   },
   "files": [
     "index.mjs",
-    "index.js.map",
+    "index.mjs.map",
     "index.cjs.js",
     "index.cjs.js.map",
     "index.d.ts"
