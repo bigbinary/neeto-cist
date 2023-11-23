@@ -41,8 +41,11 @@ export default {
     // To delete previously existing bundle.
     cleaner({
       targets: [
-        path.resolve(__dirname, `index.esm.js`),
-        path.resolve(__dirname, `index.js`),
+        path.resolve(__dirname, `index.cjs.js`),
+        path.resolve(__dirname, `index.cjs.js.map`),
+        path.resolve(__dirname, `index.mjs`),
+        path.resolve(__dirname, `index.mjs.map`),
+        path.resolve(__dirname, `index.d.ts`),
       ],
     }),
     // Analyze created bundle.
