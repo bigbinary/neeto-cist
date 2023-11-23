@@ -11,40 +11,36 @@ import cleaner from "rollup-plugin-cleaner";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 import packageJSON from "./package.json";
+import { globSync } from "glob";
 const rootResolve = require("./resolve.js");
 
 const globals = Object.fromEntries(
   keys(packageJSON.peerDependencies).map(lib => [lib, lib])
 );
 
-export default ["index"].map(file => ({
-  input: `./src/${file}.js`,
+export default {
+  input: `./src/index.js`,
   output: [
     {
       inlineDynamicImports: true,
-      file: `${file}.cjs.js`,
+      file: `index.cjs.js`,
       format: "cjs",
       sourcemap: true,
-      name: `neeto-cist/${file}`,
+      name: `neeto-cist/index`,
       globals,
     },
     {
       inlineDynamicImports: true,
-      file: `${file}.js`,
+      file: `index.mjs`,
       format: "esm",
       sourcemap: true,
-      name: `neeto-cist/${file}`,
+      name: `neeto-cist/index`,
       globals,
     },
   ],
   plugins: [
     // To delete previously existing bundle.
-    cleaner({
-      targets: [
-        path.resolve(__dirname, `${file}.esm.js`),
-        path.resolve(__dirname, `${file}.js`),
-      ],
-    }),
+    cleaner({ targets: globSync(path.resolve(__dirname, `index.*`)) }),
     // Analyze created bundle.
     analyze({ summaryOnly: true }),
     // To automatically externalize peerDependencies in a rollup bundle.
@@ -65,4 +61,4 @@ export default ["index"].map(file => ({
     // To convert CommonJS modules to ES6.
     commonjs(),
   ],
-}));
+};
