@@ -11,6 +11,7 @@ import cleaner from "rollup-plugin-cleaner";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 import packageJSON from "./package.json";
+import { globSync } from "glob";
 const rootResolve = require("./resolve.js");
 
 const globals = Object.fromEntries(
@@ -39,15 +40,7 @@ export default {
   ],
   plugins: [
     // To delete previously existing bundle.
-    cleaner({
-      targets: [
-        path.resolve(__dirname, `index.cjs.js`),
-        path.resolve(__dirname, `index.cjs.js.map`),
-        path.resolve(__dirname, `index.mjs`),
-        path.resolve(__dirname, `index.mjs.map`),
-        path.resolve(__dirname, `index.d.ts`),
-      ],
-    }),
+    cleaner({ targets: globSync(path.resolve(__dirname, `index.*`)) }),
     // Analyze created bundle.
     analyze({ summaryOnly: true }),
     // To automatically externalize peerDependencies in a rollup bundle.
