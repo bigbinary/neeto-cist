@@ -6,7 +6,6 @@ module.exports = {
   clearMocks: true,
   collectCoverage: false,
   coverageDirectory: "coverage",
-  testURL: "http://test.com",
   moduleFileExtensions: [...defaults.moduleFileExtensions, "svg"],
   moduleNameMapper: {
     "^src(.*)$": path.resolve(__dirname, "src/$1"),
