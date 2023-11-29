@@ -5,6 +5,7 @@ module.exports = mergeDeepLeft(
   {
     extends: [...defaultConfigurations.extends, "plugin:storybook/recommended"],
     rules: {
+      "@bigbinary/neeto/no-missing-localization": "off",
       "@bigbinary/neeto/file-name-and-export-name-standards": "off",
       "@bigbinary/neeto/no-axios-import-outside-apis": "off",
       "@bigbinary/neeto/use-neetoui-classes": "error",
