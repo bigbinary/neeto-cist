@@ -96,7 +96,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "peerDependencies": {
-    "ramda": "^0.29.0",
-    "@bigbinary/neeto-commons-frontend": "latest"
+    "@bigbinary/neeto-commons-frontend": "latest",
+    "ramda": "^0.29.0"
   }
 }
