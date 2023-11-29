@@ -1,21 +1,16 @@
-module.exports = {
-  ignorePatterns: [
-    "!.scripts",
-    "initializers.*js",
-    "react-utils.*js",
-    "cypress-utils.*js",
-    "cypress-commands.*js",
-    "utils.*js",
-    "pure.*js",
-    "node_modules",
-  ],
-  overrides: [
-    {
-      files: [".scripts/**/*"],
-      rules: {
-        "no-console": "off",
-        "import/extensions": "off",
-      },
+const defaultConfigurations = require("@bigbinary/neeto-commons-frontend/configs/nanos/eslint/index.js");
+const { mergeDeepLeft } = require("ramda");
+
+module.exports = mergeDeepLeft(
+  {
+    extends: [...defaultConfigurations.extends, "plugin:storybook/recommended"],
+    rules: {
+      "@bigbinary/neeto/no-missing-localization": "off",
+      "@bigbinary/neeto/file-name-and-export-name-standards": "off",
+      "@bigbinary/neeto/no-axios-import-outside-apis": "off",
+      "@bigbinary/neeto/use-neetoui-classes": "error",
+      "import/extensions": "off",
     },
-  ],
-};
+  },
+  defaultConfigurations
+);

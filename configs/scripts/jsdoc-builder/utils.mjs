@@ -4,7 +4,7 @@ import path from "path";
 import * as babelParser from "@babel/parser";
 import { curry, __, mergeLeft } from "ramda";
 import remarkParse from "remark-parse";
-import unified from "unified";
+import { unified } from "unified";
 
 import {
   ASTERISK,

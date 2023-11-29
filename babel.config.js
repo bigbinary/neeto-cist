@@ -30,7 +30,6 @@ module.exports = function (api) {
               modules: false,
             },
           ],
-      ["@babel/preset-react", { development: isDevelopmentEnv || isTestEnv }],
     ].filter(Boolean),
     plugins: [
       "babel-plugin-macros",
