@@ -55,7 +55,7 @@ export default {
     json(),
     // To integrate Rollup and Babel.
     babel({
-      exclude: "node_modules/**",
+      exclude: /node_modules\/(?!immer)/,
       babelHelpers: "runtime",
     }),
     // To convert CommonJS modules to ES6.
