@@ -176,6 +176,9 @@ export function getRandomInt(a?: number, b?: number): number;
 export function humanize(string: string): string;
 export function _humanize(string: NilOr<string>): NilOr<string>;
 
+export function hyphenate(string: string): string;
+export function _hyphenate(string: NilOr<string>): NilOr<string>;
+
 export function isNot(a: any, b: any): boolean;
 export function isNot(a: any): (b: any) => boolean;
 
@@ -333,7 +336,7 @@ export function transformObjectDeep(
 ): object;
 
 export function truncate(string: string, length: number): string;
-export function truncate(string: NilOr<string>, length: number): NilOr<string>;
+export function _truncate(string: NilOr<string>, length: number): NilOr<string>;
 
 export function nullSafe<T extends Function>(
   func: T

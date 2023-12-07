@@ -4,6 +4,7 @@ import {
   snakeToCamelCase,
   slugify,
   capitalize,
+  hyphenate,
   truncate,
 } from "src/strings";
 
@@ -39,6 +40,12 @@ describe("String operations", () => {
     expect(capitalize("oliver")).toBe("Oliver");
     expect(capitalize("Oliver")).toBe("Oliver");
     expect(capitalize("OLIVER")).toBe("OLIVER");
+  });
+
+  test("hyphenate() method should hyphenate the string", () => {
+    expect(hyphenate("Hello World")).toBe("hello-world");
+    expect(hyphenate("hello_world")).toBe("hello-world");
+    expect(hyphenate("helloWorld")).toBe("hello-world");
   });
 
   test("truncate() method should truncate the string if it is longer than specified string length", () => {

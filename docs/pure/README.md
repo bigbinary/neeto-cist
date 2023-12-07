@@ -96,6 +96,7 @@ import { slugify } from "@bigbinary/neeto-cist";
 - [snakeToCamelCase](./strings.md#snaketocamelcase)
 - [camelToSnakeCase](./strings.md#cameltosnakecase)
 - [capitalize](./strings.md#capitalize)
+- [hyphenate](./strings.md#hyphenate)
 - [truncate](./strings.md#truncate)
 
 </td>

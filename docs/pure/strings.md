@@ -115,6 +115,30 @@ capitalize("oLIVER"); // "OLIVER"
 
 </details>
 
+## hyphenate
+
+Curried: false
+Failsafe status: alternative available
+
+Hyphenates a string.
+
+<details>
+<summary>(click for example)</summary>
+
+### Arguments:
+- `string`: The string to be hyphenated.
+
+### Usage:
+
+```js
+hyphenate("Hello World",) //  "hello-world"
+hyphenate("hello_world"); // "hello-world"
+hyphenate("helloWorld"); // "hello-world"
+```
+
+</details>
+
+
 ## truncate
 
 Curried: false
