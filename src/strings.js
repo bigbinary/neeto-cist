@@ -35,10 +35,10 @@ export const camelToSnakeCase = string =>
 export const capitalize = string =>
   string.charAt(0).toUpperCase() + string.slice(1);
 
-export const hyphenate = string => {
+export const hyphenate = (string, fallbackString) => {
   if (typeof string === "number") return String(string);
 
-  if (typeof string === "string") {
+  if (string && typeof string === "string" && string.replace) {
     return string
       .replace(/[\s_]/g, "-")
       .replace(/([a-z])([A-Z])/g, "$1-$2")
@@ -46,7 +46,7 @@ export const hyphenate = string => {
       .toLowerCase();
   }
 
-  return string;
+  return fallbackString;
 };
 
 export const truncate = (string, length) =>
@@ -57,6 +57,6 @@ export const _humanize = /*#__PURE__*/ nullSafe(humanize);
 export const _snakeToCamelCase = /*#__PURE__*/ nullSafe(snakeToCamelCase);
 export const _camelToSnakeCase = /*#__PURE__*/ nullSafe(camelToSnakeCase);
 export const _capitalize = /*#__PURE__*/ nullSafe(capitalize);
+export const _hyphenate = /*#__PURE__*/ nullSafe(hyphenate);
 export const _truncate = (string, length) =>
   isNil(string) ? string : truncate(string, length);
-export const _hyphenate = /*#__PURE__*/ nullSafe(hyphenate);

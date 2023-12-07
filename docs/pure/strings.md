@@ -2,8 +2,7 @@
 
 ## slugify
 
-Curried: false
-Failsafe status: alternative available
+Curried: false Failsafe status: alternative available
 
 Converts a given string to slug.
 
@@ -11,6 +10,7 @@ Converts a given string to slug.
 <summary>(click for example)</summary>
 
 ### Arguments:
+
 - `string`: The string to be converted.
 
 ### Usage:
@@ -27,8 +27,7 @@ slugify("my!@#$%^*(quiz"); // "myquiz"
 
 ## humanize
 
-Curried: false
-Failsafe status: alternative available
+Curried: false Failsafe status: alternative available
 
 Converts common developer friendly string formats (camelCase, snake_case,
 dash-case etc) to human readable string.
@@ -37,6 +36,7 @@ dash-case etc) to human readable string.
 <summary>(click for example)</summary>
 
 ### Arguments:
+
 - `string`: The string to be converted.
 
 ### Usage:
@@ -52,8 +52,7 @@ humanize("HelloUSA"); // "Hello usa"
 
 ## snakeToCamelCase
 
-Curried: false
-Failsafe status: alternative available
+Curried: false Failsafe status: alternative available
 
 Converts snake_case string to camelCase.
 
@@ -61,6 +60,7 @@ Converts snake_case string to camelCase.
 <summary>(click for example)</summary>
 
 ### Arguments:
+
 - `string`: The string to be converted.
 
 ### Usage:
@@ -73,8 +73,7 @@ snakeToCamelCase("first_name"); // "firstName"
 
 ## camelToSnakeCase
 
-Curried: false
-Failsafe status: alternative available
+Curried: false Failsafe status: alternative available
 
 Converts camelCase string to snake_case.
 
@@ -82,6 +81,7 @@ Converts camelCase string to snake_case.
 <summary>(click for example)</summary>
 
 ### Arguments:
+
 - `string`: The string to be converted.
 
 ### Usage:
@@ -94,8 +94,7 @@ camelToSnakeCase("firstName"); // "first_name"
 
 ## capitalize
 
-Curried: false
-Failsafe status: alternative available
+Curried: false Failsafe status: alternative available
 
 Convert the first character of string to upper case.
 
@@ -103,6 +102,7 @@ Convert the first character of string to upper case.
 <summary>(click for example)</summary>
 
 ### Arguments:
+
 - `string`: The string to be converted.
 
 ### Usage:
@@ -117,32 +117,32 @@ capitalize("oLIVER"); // "OLIVER"
 
 ## hyphenate
 
-Curried: false
-Failsafe status: alternative available
+Curried: false Failsafe status: alternative available
 
-Hyphenates a string.
+The hyphenate function converts strings that contain underscores, spaces, and
+camelCase strings into hyphenated strings
 
 <details>
 <summary>(click for example)</summary>
 
 ### Arguments:
+
 - `string`: The string to be hyphenated.
+- `fallbackString`: value to be returned if string is empty
 
 ### Usage:
 
 ```js
-hyphenate("Hello World",) //  "hello-world"
+hyphenate("Hello World"); //  "hello-world"
 hyphenate("hello_world"); // "hello-world"
 hyphenate("helloWorld"); // "hello-world"
 ```
 
 </details>
 
-
 ## truncate
 
-Curried: false
-Failsafe status: alternative available
+Curried: false Failsafe status: alternative available
 
 Truncate the string with `...` if it is longer than specified string length.
 
@@ -150,6 +150,7 @@ Truncate the string with `...` if it is longer than specified string length.
 <summary>(click for example)</summary>
 
 ### Arguments:
+
 - `string`: The string to be truncated.
 - `length`: The maximum allowed length of the string.
 
