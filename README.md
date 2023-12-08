@@ -69,6 +69,7 @@ Name
 - [snakeToCamelCase](./docs/pure/strings.md#snaketocamelcase)
 - [camelToSnakeCase](./docs/pure/strings.md#cameltosnakecase)
 - [capitalize](./docs/pure/strings.md#capitalize)
+- [hyphenate](./docs/pure/strings.md#hyphenate)
 - [truncate](./docs/pure/strings.md#truncate)
 - [noop](./docs/pure/general.md#noop)
 - [toLabelAndValue](./docs/pure/general.md#tolabelandvalue)
