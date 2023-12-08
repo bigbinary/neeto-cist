@@ -5,7 +5,9 @@ import {
   slugify,
   capitalize,
   hyphenate,
+  _hyphenate,
   truncate,
+  _truncate,
 } from "src/strings";
 
 describe("String operations", () => {
@@ -48,8 +50,19 @@ describe("String operations", () => {
     expect(hyphenate("helloWorld")).toBe("hello-world");
   });
 
+  test("_hyphenate() method should hyphenate the string", () => {
+    expect(_hyphenate("Hello World")).toBe("hello-world");
+    expect(_hyphenate("hello_world")).toBe("hello-world");
+    expect(_hyphenate("helloWorld")).toBe("hello-world");
+  });
+
   test("truncate() method should truncate the string if it is longer than specified string length", () => {
     expect(truncate("Hello World", 5)).toBe("Hello...");
     expect(truncate("Hello World", 15)).toBe("Hello World");
+  });
+
+  test("_truncate() method should truncate the string if it is longer than specified string length", () => {
+    expect(_truncate("Hello World", 5)).toBe("Hello...");
+    expect(_truncate("Hello World", 15)).toBe("Hello World");
   });
 });
