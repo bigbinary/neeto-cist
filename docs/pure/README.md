@@ -80,10 +80,12 @@ import { slugify } from "@bigbinary/neeto-cist";
 </td>
 <td  style="vertical-align: top;">
 
+- [matchesImpl](./objects.md#matchesimpl)
 - [transformObjectDeep](./objects.md#transformobjectdeep)
-- [preprocessForSerialization](./objects.md#preprocessforserialization)
 - [keysToCamelCase](./objects.md#keystocamelcase)
 - [keysToSnakeCase](./objects.md#keystosnakecase)
+- [serializeKeysToSnakeCase](./objects.md#serializekeystosnakecase)
+- [preprocessForSerialization](./objects.md#preprocessforserialization)
 - [deepFreezeObject](./objects.md#deepfreezeobject)
 - [matches](./objects.md#matches)
 - [filterNonNull](./objects.md#filternonnull)
@@ -102,6 +104,7 @@ import { slugify } from "@bigbinary/neeto-cist";
 </td>
 <td  style="vertical-align: top;">
 
+- [nullSafe](./general.md#nullsafe)
 - [noop](./general.md#noop)
 - [toLabelAndValue](./general.md#tolabelandvalue)
 - [getRandomInt](./general.md#getrandomint)
@@ -109,7 +112,10 @@ import { slugify } from "@bigbinary/neeto-cist";
 - [dynamicArray](./general.md#dynamicarray)
 - [isNotEmpty](./general.md#isnotempty)
 - [isNot (alias notEquals)](./general.md#isnot_alias_notequals)
+- [isNotPresent](./general.md#isnotpresent)
+- [isPresent](./general.md#ispresent)
 - [isNotEqualDeep (alias notEqualsDeep)](./general.md#isnotequaldeep_alias_notequalsdeep)
+- [modifyWithImmer](./general.md#modifywithimmer)
 </td>
 <tr>
 </tbody>
