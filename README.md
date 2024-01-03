@@ -6,12 +6,18 @@ A collection of common utility functions used across all our
 [neeto](https://neeto.com) products. Try out the utility functions live at
 [neetoCommons REPL](https://neeto-cist.neeto.com/).
 
-## Installation Instructions
+## Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [List of Pure Functions](#list-of-pure-functions)
+  - [Development](#development)
+
+## Installation
 
 Install from npm:
 
 ```bash
-yarn add @bigbinary/neeto-cist
+yarn add @bigbinary/neeto-cist@latest
 ```
 
 Install the peer dependencies:
@@ -19,6 +25,26 @@ Install the peer dependencies:
 ```bash
 yarn add ramda
 ```
+
+## Usage
+
+You can import all functions from `@bigbinary/neeto-cist`.
+
+```js
+import { slugify } from "@bigbinary/neeto-cist";
+```
+
+Exports several general utility functions that are used throughout neeto
+products. The functions are designed in a similar fashion as ramda so that they
+can easily interoperate with each other.
+
+Pure functions were designed to be fail fast. If you call `findById(10, null)`,
+it will throw error saying that it can't iterate through `null`.
+
+But for most such pure functions, there is a failsafe alternative available. The
+failsafe alternative function will be prefixed with `_`. Example:
+`_findById(10, null)` returns `null`, `_findById(10, undefined)` returns
+`undefined` and `_findById(10, [{ id: 10 }])` returns `{ id: 10 }`.
 
 ## List of Pure Functions
 
@@ -79,6 +105,9 @@ Name
 - [isNotEmpty](./docs/pure/general.md#isnotempty)
 - [isNot (alias notEquals)](./docs/pure/general.md#isnot_alias_notequals)
 - [isNotEqualDeep (alias notEqualsDeep)](./docs/pure/general.md#isnotequaldeep_alias_notequalsdeep)
+- [isNotPresent](./docs/pure/general.md#isnotpresent)
+- [isPresent](./docs/pure/general.md#ispresent)
+- [modifyWithImmer](./docs/pure/general.md#modifywithimmer)
 
 </td>
 </tr>
@@ -87,35 +116,7 @@ Name
 </tbody>
 </table>
 
-## Installation Instructions
-
-Install from npm:
-
-```bash
-yarn add "@bigbinary/neeto-cist@latest"
-```
-
-## Usage
-
-You can import all functions from `@bigbinary/neeto-cist`.
-
-```js
-import { slugify } from "@bigbinary/neeto-cist";
-```
-
-Exports several general utility functions that are used throughout neeto
-products. The functions are designed in a similar fashion as ramda so that they
-can easily interoperate with each other.
-
-Pure functions were designed to be fail fast. If you call `findById(10, null)`,
-it will throw error saying that it can't iterate through `null`.
-
-But for most such pure functions, there is a failsafe alternative available. The
-failsafe alternative function will be prefixed with `_`. Example:
-`_findById(10, null)` returns `null`, `_findById(10, undefined)` returns
-`undefined` and `_findById(10, [{ id: 10 }])` returns `{ id: 10 }`.
-
-## Other references
+## Development
 
 - [Development instructions](./docs/general/development-instructions.md)
 - [Building and releasing](./docs/general/building-and-releasing.md)

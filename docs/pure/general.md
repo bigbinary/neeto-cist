@@ -1,5 +1,27 @@
 # General Functions
 
+## nullSafe
+
+Curried: false
+Failsafe status: failsafe by default
+
+This function takes a function as an argument and returns a curried version of the function.
+
+<details>
+<summary>{click for more}</summary>
+
+### Arguments:
+  - `func`: A function that needs to be curried.
+
+### Usage:
+```js
+const add = (a, b) => a + b;
+nullSafe(add)(1)(2);
+// Output: 3
+```
+
+</details>
+
 ## noop
 
 Curried: false
@@ -152,6 +174,46 @@ isNot("Oliver", "Oliver"); // returns false
 
 </details>
 
+## isNotPresent
+
+Curried: false
+Failsafe status: failsafe by default
+
+Returns `true` if value is not present. Returns false otherwise.
+
+<details>
+<summary>(click for more)</summary>
+
+### Arguments:
+  - One value to be checked
+
+### Usage:
+```js
+isNotPresent(null);
+// Output: true
+```
+</details>
+
+## isPresent
+
+Curried: false
+Failsafe status: failsafe by default
+
+Returns `true` if value is present. Returns false otherwise.
+
+<details>
+<summary>(click for more)</summary>
+
+### Arguments:
+  - One value to be checked
+
+### Usage:
+```js
+isPresent(null);
+// Output: false
+```
+</details>
+
 ## isNotEqualDeep (alias notEqualsDeep)
 
 Curried: false
@@ -180,4 +242,33 @@ const object2 = {
 isNotEqualsDeep(object1, object2); //returns true
 ```
 
+</details>
+
+## modifyWithImmer
+
+Curried: true
+Failsafe status: Not failsafe
+
+Receives a state and a modifier function. Returns modified state. Original state object is left untouched.
+
+Modifier function receives draft state as the argument. We can use mutating methods like `push`, `pop`, `splice`, `delete` without any issues on that parameter.
+
+<details>
+<summary>(click for more)</summary>
+
+### Arguments:
+  - `modifier`: The modifier function.
+  - `data`: The state object.
+
+### Usage:
+```js
+const modifier = (state) => state.names.push("Tom");
+const data = { names: ["Oliver", "Sam", "Jon"] };
+const updatedState = modifyWithImmer(modifier, data);
+
+console.log(data);
+// { names: ["Oliver", "Sam", "Jon"] }
+console.log(updatedState);
+// { names: ["Oliver", "Sam", "Jon", "Tom"] }
+```
 </details>
