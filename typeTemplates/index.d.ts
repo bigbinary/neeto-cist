@@ -1,3 +1,5 @@
+import { Draft } from "immer";
+
 export type Primitives = symbol | string | number | boolean | null | undefined;
 export type ObjectAndPrimitives = Primitives | object;
 type KeyType = string | number | symbol;
@@ -338,9 +340,9 @@ export function transformObjectDeep(
 export function truncate(string: string, length: number): string;
 export function _truncate(string: NilOr<string>, length: number): NilOr<string>;
 
-export function nullSafe<T extends Function>(
+export function nullSafe<T extends (...args: any) => any>(
   func: T
-): (...args: any) => ReturnType<T>;
+): (...args: Parameters<T>) => ReturnType<T>;
 
 export function isNotPresent(object: any): boolean;
 export function isPresent(object: any): boolean;
