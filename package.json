@@ -1,6 +1,6 @@
 {
   "name": "@bigbinary/neeto-cist",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A package encapsulating common utility functions used across neeto products",
   "repository": "git@github.com:bigbinary/neeto-cist.git",
   "license": "apache-2.0",
