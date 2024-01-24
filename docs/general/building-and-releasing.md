@@ -18,7 +18,7 @@ checkout the `Publish to npm` workflow in GitHub Actions to get a live update.
 Please note that before publishing the package, you need to verify the
 functionality in some of the neeto web-apps locally using `yalc` package
 manager. The usage of yalc is explained in this video:
-https://youtu.be/QBiYGP0Rhe0
+https://youtu.be/F4zZFnrNTq8
 
 Type declaration files are written & kept in `typeTemplates` folder. The
 `jsdoc-builder` script will take these declaration files, add jsdoc comments and
