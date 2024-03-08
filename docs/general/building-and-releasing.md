@@ -1,18 +1,18 @@
 # Building and releasing.
 
-The `@bigbinary/neeto-cist` package gets published to NPM when we merge a PR
-with `patch`, `minor` or `major` label to the `main` branch. The `patch` label
-is used for bug fixes, `minor` label is used for new features and `major` label
-is used for breaking changes. You can checkout the `Create and publish releases`
-workflow in GitHub Actions to get a live update.
+The `@bigbinary/neeto-cist` package gets published to NPM when we
+merge a PR with `patch`, `minor` or `major` label to the `main` branch. The
+`patch` label is used for bug fixes, `minor` label is used for new features and
+`major` label is used for breaking changes. You can checkout the
+`Create and publish releases` workflow in GitHub Actions to get a live update.
 
 In case if you missed to add the label, you can manually publish the package.
 For that first you need to create a PR to update the version number in the
 `package.json` file and merge it to the `main` branch. After merging the PR, you
 need to create a
-[new github release](https://github.com/bigbinary/neeto-cist/releases/new) from
-main branch. Whenever a new release is created with a new version number, the
-github actions will automatically publish the built package to npm. You can
+[new github release](https://github.com/bigbinary/neeto-cist/releases/new)
+from main branch. Whenever a new release is created with a new version number,
+the github actions will automatically publish the built package to npm. You can
 checkout the `Publish to npm` workflow in GitHub Actions to get a live update.
 
 Please note that before publishing the package, you need to verify the
