@@ -1,11 +1,11 @@
 # General utility functions
 
 Exports several general utility functions that are used throughout neeto
-products. The functions are designed in a similar fashion as ramda so that they
-can easily interoperate with each other.
+products. The functions are structured in a manner reminiscent of Ramda,
+enabling seamless interoperability among them.
 
-Pure functions were designed to be fail fast. If you call `findById(10, null)`,
-it will throw error saying that it can't iterate through `null`.
+Pure functions were designed to be fail fast. If you call `findById(10, null)`, it
+will throw an error saying that it can't iterate through `null`.
 
 But for most such pure functions, there is a failsafe alternative available. The
 failsafe alternative function will be prefixed with `_`. Example:
@@ -27,22 +27,22 @@ import { slugify } from "@bigbinary/neeto-cist";
 <tr>
 <th>
 
-[Array operations](./arrays.md)
+Array operations
 
 </th>
 <th>
 
-[Object operations](./objects.md)
+Object operations
 
 </th>
 <th>
 
-[String operations](./strings.md)
+String operations
 
 </th>
 <th>
 
-[General utility functions](./general.md)
+General utility functions
 
 </th>
 </tr>
@@ -51,71 +51,71 @@ import { slugify } from "@bigbinary/neeto-cist";
 <tr>
 <td style="vertical-align: top;">
 
-- [findById](./arrays.md#findbyid)
-- [findIndexById](./arrays.md#findindexbyid)
-- [removeById](./arrays.md#removebyid)
-- [replaceById](./arrays.md#replacebyid)
-- [modifyById](./arrays.md#modifybyid)
-- [existsById](./arrays.md#existsbyid)
+- [findById](./arrays/findById.md)
+- [findIndexById](./arrays/findIndexById.md)
+- [removeById](./arrays/removeById.md)
+- [replaceById](./arrays/replaceById.md)
+- [modifyById](./arrays/modifyById.md)
+- [existsById](./arrays/existsById.md)
 
 ---
 
-- [findBy](./arrays.md#findby)
-- [findIndexBy](./arrays.md#findindexby)
-- [removeBy](./arrays.md#removeby)
-- [replaceBy](./arrays.md#replaceby)
-- [modifyBy](./arrays.md#modifyby)
-- [existsBy](./arrays.md#existsby)
-- [findLastBy](./arrays.md#findlastby)
-- [findLastIndexBy](./arrays.md#findlastindexby)
-- [filterBy](./arrays.md#filterby)
-- [countBy](./arrays.md#countby)
+- [findBy](./arrays/findBy.md)
+- [findIndexBy](./arrays/findIndexBy.md)
+- [removeBy](./arrays/removeBy.md)
+- [replaceBy](./arrays/replaceBy.md)
+- [modifyBy](./arrays/modifyBy.md)
+- [existsBy](./arrays/existsBy.md)
+- [findLastBy](./arrays/findLastBy.md)
+- [findLastIndexBy](./arrays/findLastIndexBy.md)
+- [filterBy](./arrays/filterBy.md)
+- [countBy](./arrays/countBy.md)
 
 ---
 
-- [renameKeys](./arrays.md#renamekeys)
-- [copyKeys](./arrays.md#copykeys)
-- [copyKeysDeep](./arrays.md#copykeysdeep)
+- [renameKeys](./arrays/renameKeys.md)
+- [copyKeys](./arrays/copyKeys.md)
+- [copyKeysDeep](./arrays/copyKeysDeep.md)
 
 </td>
 <td  style="vertical-align: top;">
 
-- [matchesImpl](./objects.md#matchesimpl)
-- [transformObjectDeep](./objects.md#transformobjectdeep)
-- [keysToCamelCase](./objects.md#keystocamelcase)
-- [keysToSnakeCase](./objects.md#keystosnakecase)
-- [serializeKeysToSnakeCase](./objects.md#serializekeystosnakecase)
-- [preprocessForSerialization](./objects.md#preprocessforserialization)
-- [deepFreezeObject](./objects.md#deepfreezeobject)
-- [matches](./objects.md#matches)
-- [filterNonNull](./objects.md#filternonnull)
+- [matchesImpl](./objects/matchesImpl.md)
+- [transformObjectDeep](./objects/transformObjectDeep.md)
+- [keysToCamelCase](./objects/keysToCamelCase.md)
+- [keysToSnakeCase](./objects/keysToSnakeCase.md)
+- [serializeKeysToSnakeCase](./objects/serializeKeysToSnakeCase.md)
+- [preprocessForSerialization](./objects/preprocessForSerialization.md)
+- [deepFreezeObject](./objects/deepFreezeObject.md)
+- [matches](./objects/matches.md)
+- [filterNonNull](./objects/filterNonNull.md)
 
 </td>
 <td  style="vertical-align: top;">
 
-- [slugify](./strings.md#slugify)
-- [humanize](./strings.md#humanize)
-- [snakeToCamelCase](./strings.md#snaketocamelcase)
-- [camelToSnakeCase](./strings.md#cameltosnakecase)
-- [capitalize](./strings.md#capitalize)
-- [hyphenate](./strings.md#hyphenate)
-- [truncate](./strings.md#truncate)
+- [slugify](./strings/slugify.md)
+- [humanize](./strings/humanize.md)
+- [snakeToCamelCase](./strings/snakeToCamelCase.md)
+- [camelToSnakeCase](./strings/camelToSnakeCase.md)
+- [capitalize](./strings/capitalize.md)
+- [hyphenate](./strings/hyphenate.md)
+- [truncate](./strings/truncate.md)
 
 </td>
 <td  style="vertical-align: top;">
 
-- [nullSafe](./general.md#nullsafe)
-- [noop](./general.md#noop)
-- [toLabelAndValue](./general.md#tolabelandvalue)
-- [getRandomInt](./general.md#getrandomint)
-- [randomPick](./general.md#randompick)
-- [dynamicArray](./general.md#dynamicarray)
-- [isNotEmpty](./general.md#isnotempty)
-- [isNot (alias notEquals)](./general.md#isnot_alias_notequals)
-- [isNotPresent](./general.md#isnotpresent)
-- [isPresent](./general.md#ispresent)
-- [isNotEqualDeep (alias notEqualsDeep)](./general.md#isnotequaldeep_alias_notequalsdeep)
-- [modifyWithImmer](./general.md#modifywithimmer)
+- [nullSafe](./general/nullSafe.md)
+- [noop](./general/noop.md)
+- [toLabelAndValue](./general/toLabelAndValue.md)
+- [getRandomInt](./general/getRandomInt.md)
+- [randomPick](./general/randomPick.md)
+- [dynamicArray](./general/dynamicArray.md)
+- [isNotEmpty](./general/isNotEmpty.md)
+- [isNot (notEquals)](./general/isNot.md)
+- [isNotPresent](./general/isNotPresent.md)
+- [isPresent](./general/isPresent.md)
+- [isNotEqualDeep (alias notEqualsDeep)](./general/isNotEqualDeep.md)
+- [modifyWithImmer](./general/modifyWithImmer.md)
 </td>
 <tr>
 </tbody>
