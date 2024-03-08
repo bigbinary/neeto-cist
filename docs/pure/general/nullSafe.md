@@ -5,11 +5,11 @@
 
 The `nullSafe` function takes a function as an argument and returns a curried version of the function. It ensures that the last argument passed to the curried function is not null or undefined before invoking the original function `func`.
 
-## Arguments
+### Arguments
 
 - `func`: A function that needs to be curried.
 
-## Usage
+### Usage
 
 ```js
 const add = (a, b) => a + b;
