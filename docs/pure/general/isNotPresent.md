@@ -5,7 +5,7 @@
 
 The `isNotPresent` function is a utility that checks if a value is not present.
 It combines checks for null and empty values. It is worth noting that we also
-have a `isPresent` utility function that returns the complement of
+have an [isPresent](./isPresent.md) `isPresent` utility function that returns the complement of
 `isNotPresent`.
 
 ## Arguments
