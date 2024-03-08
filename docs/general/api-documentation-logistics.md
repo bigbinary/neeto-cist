@@ -11,7 +11,7 @@ the guidelines outlined below when adding a new utility or editing an existing
 one within the package:
 
 1. When adding a new utility, create a file with the same name as that of
-   function in the respective directory (`general`, `pure`) based on its use case.
+   function in the respective directory inside the `pure` directory based on its use case.
 2. Follow the format below to compose the function documentation:
 
 ```
