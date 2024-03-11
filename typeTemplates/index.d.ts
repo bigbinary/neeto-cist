@@ -114,12 +114,12 @@ export function _filterBy(
 export function filterNonNull(object: object): object;
 export function _filterNonNull(object: NilOr<object>): NilOr<object>;
 
-export function findBy<T>(pattern: MatchPattern<T>, entityArray: T[]): T;
+export function findBy<T, P>(pattern: MatchPattern<T>, entityArray: P[]): P;
 export function findBy(pattern: MatchPattern): <T>(entityArray: T[]) => T;
-export function _findBy<T>(
+export function _findBy<T, P>(
   pattern: MatchPattern<T>,
-  entityArray: NilOr<T[]>
-): NilOr<T>;
+  entityArray: NilOr<P[]>
+): NilOr<P>;
 export function _findBy(
   pattern: MatchPattern
 ): <T>(entityArray: NilOr<T[]>) => NilOr<T>;
