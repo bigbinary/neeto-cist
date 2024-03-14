@@ -77,71 +77,71 @@ General utility functions
 <tr>
 <td style="vertical-align: top;">
 
-- [findById](./arrays/findById.md)
-- [findIndexById](./arrays/findIndexById.md)
-- [removeById](./arrays/removeById.md)
-- [replaceById](./arrays/replaceById.md)
-- [modifyById](./arrays/modifyById.md)
-- [existsById](./arrays/existsById.md)
+- [findById](docs/pure/arrays/findById.md)
+- [findIndexById](docs/pure/arrays/findIndexById.md)
+- [removeById](docs/pure/arrays/removeById.md)
+- [replaceById](docs/pure/arrays/replaceById.md)
+- [modifyById](docs/pure/arrays/modifyById.md)
+- [existsById](docs/pure/arrays/existsById.md)
 
 ---
 
-- [findBy](./arrays/findBy.md)
-- [findIndexBy](./arrays/findIndexBy.md)
-- [removeBy](./arrays/removeBy.md)
-- [replaceBy](./arrays/replaceBy.md)
-- [modifyBy](./arrays/modifyBy.md)
-- [existsBy](./arrays/existsBy.md)
-- [findLastBy](./arrays/findLastBy.md)
-- [findLastIndexBy](./arrays/findLastIndexBy.md)
-- [filterBy](./arrays/filterBy.md)
-- [countBy](./arrays/countBy.md)
+- [findBy](docs/pure/arrays/findBy.md)
+- [findIndexBy](docs/pure/arrays/findIndexBy.md)
+- [removeBy](docs/pure/arrays/removeBy.md)
+- [replaceBy](docs/pure/arrays/replaceBy.md)
+- [modifyBy](docs/pure/arrays/modifyBy.md)
+- [existsBy](docs/pure/arrays/existsBy.md)
+- [findLastBy](docs/pure/arrays/findLastBy.md)
+- [findLastIndexBy](docs/pure/arrays/findLastIndexBy.md)
+- [filterBy](docs/pure/arrays/filterBy.md)
+- [countBy](docs/pure/arrays/countBy.md)
 
 ---
 
-- [renameKeys](./arrays/renameKeys.md)
-- [copyKeys](./arrays/copyKeys.md)
-- [copyKeysDeep](./arrays/copyKeysDeep.md)
+- [renameKeys](docs/pure/arrays/renameKeys.md)
+- [copyKeys](docs/pure/arrays/copyKeys.md)
+- [copyKeysDeep](docs/pure/arrays/copyKeysDeep.md)
 
 </td>
 <td  style="vertical-align: top;">
 
-- [matchesImpl](./objects/matchesImpl.md)
-- [transformObjectDeep](./objects/transformObjectDeep.md)
-- [keysToCamelCase](./objects/keysToCamelCase.md)
-- [keysToSnakeCase](./objects/keysToSnakeCase.md)
-- [serializeKeysToSnakeCase](./objects/serializeKeysToSnakeCase.md)
-- [preprocessForSerialization](./objects/preprocessForSerialization.md)
-- [deepFreezeObject](./objects/deepFreezeObject.md)
-- [matches](./objects/matches.md)
-- [filterNonNull](./objects/filterNonNull.md)
+- [matchesImpl](docs/pure/objects/matchesImpl.md)
+- [transformObjectDeep](docs/pure/objects/transformObjectDeep.md)
+- [keysToCamelCase](docs/pure/objects/keysToCamelCase.md)
+- [keysToSnakeCase](docs/pure/objects/keysToSnakeCase.md)
+- [serializeKeysToSnakeCase](docs/pure/objects/serializeKeysToSnakeCase.md)
+- [preprocessForSerialization](docs/pure/objects/preprocessForSerialization.md)
+- [deepFreezeObject](docs/pure/objects/deepFreezeObject.md)
+- [matches](docs/pure/objects/matches.md)
+- [filterNonNull](docs/pure/objects/filterNonNull.md)
 
 </td>
 <td  style="vertical-align: top;">
 
-- [slugify](./strings/slugify.md)
-- [humanize](./strings/humanize.md)
-- [snakeToCamelCase](./strings/snakeToCamelCase.md)
-- [camelToSnakeCase](./strings/camelToSnakeCase.md)
-- [capitalize](./strings/capitalize.md)
-- [hyphenate](./strings/hyphenate.md)
-- [truncate](./strings/truncate.md)
+- [slugify](docs/pure/strings/slugify.md)
+- [humanize](docs/pure/strings/humanize.md)
+- [snakeToCamelCase](docs/pure/strings/snakeToCamelCase.md)
+- [camelToSnakeCase](docs/pure/strings/camelToSnakeCase.md)
+- [capitalize](docs/pure/strings/capitalize.md)
+- [hyphenate](docs/pure/strings/hyphenate.md)
+- [truncate](docs/pure/strings/truncate.md)
 
 </td>
 <td  style="vertical-align: top;">
 
-- [nullSafe](./general/nullSafe.md)
-- [noop](./general/noop.md)
-- [toLabelAndValue](./general/toLabelAndValue.md)
-- [getRandomInt](./general/getRandomInt.md)
-- [randomPick](./general/randomPick.md)
-- [dynamicArray](./general/dynamicArray.md)
-- [isNotEmpty](./general/isNotEmpty.md)
-- [isNot (notEquals)](./general/isNot.md)
-- [isNotPresent](./general/isNotPresent.md)
-- [isPresent](./general/isPresent.md)
-- [isNotEqualDeep (alias notEqualsDeep)](./general/isNotEqualDeep.md)
-- [modifyWithImmer](./general/modifyWithImmer.md)
+- [nullSafe](docs/pure/general/nullSafe.md)
+- [noop](docs/pure/general/noop.md)
+- [toLabelAndValue](docs/pure/general/toLabelAndValue.md)
+- [getRandomInt](docs/pure/general/getRandomInt.md)
+- [randomPick](docs/pure/general/randomPick.md)
+- [dynamicArray](docs/pure/general/dynamicArray.md)
+- [isNotEmpty](docs/pure/general/isNotEmpty.md)
+- [isNot (notEquals)](docs/pure/general/isNot.md)
+- [isNotPresent](docs/pure/general/isNotPresent.md)
+- [isPresent](docs/pure/general/isPresent.md)
+- [isNotEqualDeep (alias notEqualsDeep)](docs/pure/general/isNotEqualDeep.md)
+- [modifyWithImmer](docs/pure/general/modifyWithImmer.md)
 </td>
 <tr>
 </tbody>
