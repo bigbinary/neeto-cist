@@ -150,4 +150,5 @@ General utility functions
 ## Development
 
 - [Development instructions](./docs/general/development-instructions.md)
+- [API documentation logistics](./docs/general/api-documentation-logistics.md)
 - [Building and releasing](./docs/general/building-and-releasing.md)
