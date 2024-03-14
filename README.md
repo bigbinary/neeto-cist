@@ -9,7 +9,7 @@ A collection of common utility functions used across all our
 ## Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [List of Pure Functions](#list-of-pure-functions)
+  - [Available functions](#available-functions)
   - [Development](#development)
 
 ## Installation
@@ -46,7 +46,7 @@ failsafe alternative function will be prefixed with `_`. Example:
 `_findById(10, null)` returns `null`, `_findById(10, undefined)` returns
 `undefined` and `_findById(10, [{ id: 10 }])` returns `{ id: 10 }`.
 
-## List of Pure Functions
+## Available functions
 
 <table>
 <thead>
