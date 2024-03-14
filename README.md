@@ -46,76 +46,106 @@ failsafe alternative function will be prefixed with `_`. Example:
 `_findById(10, null)` returns `null`, `_findById(10, undefined)` returns
 `undefined` and `_findById(10, [{ id: 10 }])` returns `{ id: 10 }`.
 
-## List of Pure Functions
+## Available functions
 
 <table>
 <thead>
 <tr>
 <th>
 
-Name
+Array operations
+
+</th>
+<th>
+
+Object operations
+
+</th>
+<th>
+
+String operations
+
+</th>
+<th>
+
+General utility functions
 
 </th>
 </tr>
 </thead>
 <tbody>
-<tr></tr>
-<tr></tr>
 <tr>
 <td style="vertical-align: top;">
 
-- [findById](./docs/pure/arrays.md#findbyid)
-- [findIndexById](./docs/pure/arrays.md#findindexbyid)
-- [removeById](./docs/pure/arrays.md#removebyid)
-- [replaceById](./docs/pure/arrays.md#replacebyid)
-- [modifyById](./docs/pure/arrays.md#modifybyid)
-- [existsById](./docs/pure/arrays.md#existsbyid)
-- [findBy](./docs/pure/arrays.md#findby)
-- [findIndexBy](./docs/pure/arrays.md#findindexby)
-- [removeBy](./docs/pure/arrays.md#removeby)
-- [replaceBy](./docs/pure/arrays.md#replaceby)
-- [modifyBy](./docs/pure/arrays.md#modifyby)
-- [existsBy](./docs/pure/arrays.md#existsby)
-- [findLastBy](./docs/pure/arrays.md#findlastby)
-- [findLastIndexBy](./docs/pure/arrays.md#findlastindexby)
-- [filterBy](./docs/pure/arrays.md#filterby)
-- [countBy](./docs/pure/arrays.md#countby)
-- [renameKeys](./docs/pure/arrays.md#renamekeys)
-- [copyKeys](./docs/pure/arrays.md#copykeys)
-- [copyKeysDeep](./docs/pure/arrays.md#copykeysdeep)
-- [transformObjectDeep](./docs/pure/objects.md#transformobjectdeep)
-- [preprocessForSerialization](./docs/pure/objects.md#preprocessforserialization)
-- [keysToCamelCase](./docs/pure/objects.md#keystocamelcase)
-- [keysToSnakeCase](./docs/pure/objects.md#keystosnakecase)
-- [deepFreezeObject](./docs/pure/objects.md#deepfreezeobject)
-- [matches](./docs/pure/objects.md#matches)
-- [filterNonNull](./docs/pure/objects.md#filternonnull)
-- [slugify](./docs/pure/strings.md#slugify)
-- [humanize](./docs/pure/strings.md#humanize)
-- [snakeToCamelCase](./docs/pure/strings.md#snaketocamelcase)
-- [camelToSnakeCase](./docs/pure/strings.md#cameltosnakecase)
-- [capitalize](./docs/pure/strings.md#capitalize)
-- [hyphenate](./docs/pure/strings.md#hyphenate)
-- [truncate](./docs/pure/strings.md#truncate)
-- [noop](./docs/pure/general.md#noop)
-- [toLabelAndValue](./docs/pure/general.md#tolabelandvalue)
-- [getRandomInt](./docs/pure/general.md#getrandomint)
-- [randomPick](./docs/pure/general.md#randompick)
-- [dynamicArray](./docs/pure/general.md#dynamicarray)
-- [isNotEmpty](./docs/pure/general.md#isnotempty)
-- [isNot (alias notEquals)](./docs/pure/general.md#isnot_alias_notequals)
-- [isNotEqualDeep (alias notEqualsDeep)](./docs/pure/general.md#isnotequaldeep_alias_notequalsdeep)
-- [isNotPresent](./docs/pure/general.md#isnotpresent)
-- [isPresent](./docs/pure/general.md#ispresent)
-- [modifyWithImmer](./docs/pure/general.md#modifywithimmer)
+- [findById](./arrays/findById.md)
+- [findIndexById](./arrays/findIndexById.md)
+- [removeById](./arrays/removeById.md)
+- [replaceById](./arrays/replaceById.md)
+- [modifyById](./arrays/modifyById.md)
+- [existsById](./arrays/existsById.md)
+
+---
+
+- [findBy](./arrays/findBy.md)
+- [findIndexBy](./arrays/findIndexBy.md)
+- [removeBy](./arrays/removeBy.md)
+- [replaceBy](./arrays/replaceBy.md)
+- [modifyBy](./arrays/modifyBy.md)
+- [existsBy](./arrays/existsBy.md)
+- [findLastBy](./arrays/findLastBy.md)
+- [findLastIndexBy](./arrays/findLastIndexBy.md)
+- [filterBy](./arrays/filterBy.md)
+- [countBy](./arrays/countBy.md)
+
+---
+
+- [renameKeys](./arrays/renameKeys.md)
+- [copyKeys](./arrays/copyKeys.md)
+- [copyKeysDeep](./arrays/copyKeysDeep.md)
 
 </td>
-</tr>
+<td  style="vertical-align: top;">
 
-<tr></tr>
+- [matchesImpl](./objects/matchesImpl.md)
+- [transformObjectDeep](./objects/transformObjectDeep.md)
+- [keysToCamelCase](./objects/keysToCamelCase.md)
+- [keysToSnakeCase](./objects/keysToSnakeCase.md)
+- [serializeKeysToSnakeCase](./objects/serializeKeysToSnakeCase.md)
+- [preprocessForSerialization](./objects/preprocessForSerialization.md)
+- [deepFreezeObject](./objects/deepFreezeObject.md)
+- [matches](./objects/matches.md)
+- [filterNonNull](./objects/filterNonNull.md)
+
+</td>
+<td  style="vertical-align: top;">
+
+- [slugify](./strings/slugify.md)
+- [humanize](./strings/humanize.md)
+- [snakeToCamelCase](./strings/snakeToCamelCase.md)
+- [camelToSnakeCase](./strings/camelToSnakeCase.md)
+- [capitalize](./strings/capitalize.md)
+- [hyphenate](./strings/hyphenate.md)
+- [truncate](./strings/truncate.md)
+
+</td>
+<td  style="vertical-align: top;">
+
+- [nullSafe](./general/nullSafe.md)
+- [noop](./general/noop.md)
+- [toLabelAndValue](./general/toLabelAndValue.md)
+- [getRandomInt](./general/getRandomInt.md)
+- [randomPick](./general/randomPick.md)
+- [dynamicArray](./general/dynamicArray.md)
+- [isNotEmpty](./general/isNotEmpty.md)
+- [isNot (notEquals)](./general/isNot.md)
+- [isNotPresent](./general/isNotPresent.md)
+- [isPresent](./general/isPresent.md)
+- [isNotEqualDeep (alias notEqualsDeep)](./general/isNotEqualDeep.md)
+- [modifyWithImmer](./general/modifyWithImmer.md)
+</td>
+<tr>
 </tbody>
 </table>
-
 ## Development
 
 - [Development instructions](./docs/general/development-instructions.md)
