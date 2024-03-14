@@ -146,6 +146,7 @@ General utility functions
 <tr>
 </tbody>
 </table>
+
 ## Development
 
 - [Development instructions](./docs/general/development-instructions.md)
