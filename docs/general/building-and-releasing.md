@@ -1,4 +1,4 @@
-# Building and releasing.
+# Building and releasing
 
 The `@bigbinary/neeto-cist` package gets published to NPM when we
 merge a PR with `patch`, `minor` or `major` label to the `main` branch. The
