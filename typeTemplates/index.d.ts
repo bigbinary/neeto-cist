@@ -301,22 +301,30 @@ export function _renameKeys<M extends { [key: string]: string }>(
   entityArray: NilOr<T[]>
 ) => NilOr<(Omit<T, keyof M> & { [key: string]: any })[]>;
 
-export function replaceBy<T>(pattern: MatchPattern<T>, entityArray: T[]): T[];
-export function replaceBy(pattern: MatchPattern): <T>(entityArray: T[]) => T[];
+export function replaceBy<T>(pattern: MatchPattern<T>, newItem: T, entityArray: T[]): T[];
+export function replaceBy(pattern: MatchPattern): <T>(newItem: T, entityArray: T[]) => T[];
+export function replaceBy<T>(pattern: MatchPattern<T>, newItem: T): (entityArray: T[]) => T[];
 export function _replaceBy<T>(
   pattern: MatchPattern<T>,
+  newItem: T,
   entityArray: NilOr<T[]>
 ): NilOr<T[]>;
 export function _replaceBy(
   pattern: MatchPattern
-): <T>(entityArray: NilOr<T[]>) => NilOr<T[]>;
+): <T>(newItem: T, entityArray: NilOr<T[]>) => NilOr<T[]>;
+export function _replaceBy<T>(
+  pattern: MatchPattern<T>,
+  newItem: T
+): (entityArray: NilOr<T[]>) => NilOr<T[]>;
 
-export function replaceById<T>(id: any, entityArray: T[]): T[];
-export function replaceById(id: any): <T>(entityArray: T[]) => T[];
-export function _replaceById<T>(id: any, entityArray: NilOr<T[]>): NilOr<T[]>;
+export function replaceById<T>(id: any, newItem: T, entityArray: T[]): T[];
+export function replaceById(id: any): <T>(newItem: T, entityArray: T[]) => T[];
+export function replaceById<T>(id: any, newItem: T): (entityArray: T[]) => T[];
+export function _replaceById<T>(id: any, newItem: T, entityArray: NilOr<T[]>): NilOr<T[]>;
 export function _replaceById(
   id: any
-): <T>(entityArray: NilOr<T[]>) => NilOr<T[]>;
+): <T>(newItem: T, entityArray: NilOr<T[]>) => NilOr<T[]>;
+export function _replaceById<T>(id: any, newItem: T): (entityArray: NilOr<T[]>) => NilOr<T[]>;
 
 export function serializeKeysToSnakeCase(object: object): object;
 export function preprocessForSerialization(object: object): object;
