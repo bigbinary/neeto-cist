@@ -4,7 +4,6 @@ const commonConfiguration = require("./configs/eslint");
 
 const nanosConfiguration = {
   extends: [
-    "plugin:@bigbinary/neeto/nanos-recommended",
     "plugin:cypress/recommended",
     "plugin:json/recommended",
     "eslint:recommended",
