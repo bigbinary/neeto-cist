@@ -57,9 +57,9 @@ export const _humanize = /*#__PURE__*/ nullSafe(humanize);
 export const _snakeToCamelCase = /*#__PURE__*/ nullSafe(snakeToCamelCase);
 export const _camelToSnakeCase = /*#__PURE__*/ nullSafe(camelToSnakeCase);
 export const _capitalize = /*#__PURE__*/ nullSafe(capitalize);
-// eslint-disable-next-line @bigbinary/neeto/use-camel-case-or-pascal-case-for-function-names
+
 export const _hyphenate = (string, length) =>
   isNil(string) ? string : hyphenate(string, length);
-// eslint-disable-next-line @bigbinary/neeto/use-camel-case-or-pascal-case-for-function-names
+
 export const _truncate = (string, length) =>
   isNil(string) ? string : truncate(string, length);

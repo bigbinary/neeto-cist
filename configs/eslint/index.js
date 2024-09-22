@@ -12,17 +12,15 @@ module.exports = {
    * unless you're sure of it.
    */
   extends: [
-    "plugin:@bigbinary/neeto/recommended",
     "plugin:cypress/recommended",
     "plugin:json/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
-    "./configs/eslint/globals",
-    "./configs/eslint/imports/order",
-    "./configs/eslint/overrides",
-    "./configs/eslint/imports/enforced",
-    "./configs/eslint/react",
-    "./configs/eslint/promise",
+    `./configs/eslint/globals`,
+    `./configs/eslint/overrides`,
+    `./configs/eslint/imports/enforced`,
+    `./configs/eslint/react`,
+    `./configs/eslint/promise`,
     "prettier",
   ],
   settings: {
@@ -52,7 +50,6 @@ module.exports = {
     "sonarjs",
     "security",
     "xss",
-    "@bigbinary/neeto",
   ],
   rules: {
     // auto-fixable: Respect all Prettier rules and apply it.
