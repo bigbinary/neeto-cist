@@ -1043,11 +1043,6 @@
     "@bigbinary/neeto-commons-frontend" "^2.0.63"
     ramda "^0.29.0"
 
-"@bigbinary/eslint-plugin-neeto@^1.1.35":
-  version "1.1.35"
-  resolved "https://registry.yarnpkg.com/@bigbinary/eslint-plugin-neeto/-/eslint-plugin-neeto-1.1.35.tgz#9cb41c8a2b9f31b0bea24a17c41f4b0038075b69"
-  integrity sha512-b4o3CriRAmUlfLooe8bJFg0z7JL4iT9W8CyHr9EqQxkvougJaVOh8SQFtRFxxByUdhQ9ZQzYTxuR7qHjzvmymA==
-
 "@bigbinary/neeto-cist@^1.0.4", "@bigbinary/neeto-cist@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@bigbinary/neeto-cist/-/neeto-cist-1.0.5.tgz#726e13f9bacb67d407532be51469dadf05bcf55a"
@@ -1057,11 +1052,6 @@
   version "2.1.39"
   resolved "https://registry.yarnpkg.com/@bigbinary/neeto-commons-frontend/-/neeto-commons-frontend-2.1.39.tgz#47e99d4c9330f5de7db59d68e2697b6be167b36b"
   integrity sha512-L2x2K4Nk2VLWV5exgjWUR9gtY/ZQdcvBfDGtfH15YPvRjba4xR/ITy2RUYxIibzOzj/gI2W44GYX7FbF5u3uuA==
-
-"@bigbinary/neeto-commons-frontend@^3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@bigbinary/neeto-commons-frontend/-/neeto-commons-frontend-3.0.6.tgz#09675db6083e5721a1cfc45d6071e1a2f4fd20db"
-  integrity sha512-4i4Y36DU83E2OcVQbwNAFpoD/FJsSV3dcQitksiwHT6fxvTpyqlJpjz976sXRuqEQyNundSwD/vQjoLleX1oQQ==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"

@@ -53,9 +53,7 @@
     "@babel/runtime": "^7.19.0",
     "@babel/types": "^7.20.7",
     "@bigbinary/babel-preset-neeto": "^1.0.7",
-    "@bigbinary/eslint-plugin-neeto": "^1.1.35",
     "@bigbinary/neeto-cist": "^1.0.5",
-    "@bigbinary/neeto-commons-frontend": "^3.0.6",
     "@honeybadger-io/react": "2.0.1",
     "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-babel": "^5.3.1",
@@ -104,7 +102,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "peerDependencies": {
-    "@bigbinary/neeto-commons-frontend": "^3.0.6",
     "ramda": "^0.29.0"
   },
   "resolutions": {
