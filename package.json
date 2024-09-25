@@ -96,7 +96,7 @@
     "prettier": "2.6.2",
     "ramda": "^0.29.0",
     "remark-parse": "^10.0.1",
-    "rollup": "^2.76.0",
+    "rollup": "^3.29.5",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4"
