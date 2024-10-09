@@ -21,8 +21,8 @@
     "prepare": "husky install",
     "sync_with_wheel": "./.scripts/sync_with_wheel.sh",
     "test": "TZ=UTC jest --detectOpenHandles",
-    "build": "NODE_ENV=production rollup -c rollup.config.js && yarn build:jsdoc",
-    "watch": "rollup -c rollup.config.js --watch",
+    "build": "NODE_ENV=production rollup --bundleConfigAsCjs -c rollup.config.js && yarn build:jsdoc",
+    "watch": "rollup --bundleConfigAsCjs -c rollup.config.js --watch",
     "build:jsdoc": "node ./.scripts/jsdoc-builder.mjs"
   },
   "engines": {
@@ -56,10 +56,10 @@
     "@bigbinary/neeto-cist": "^1.0.5",
     "@honeybadger-io/react": "2.0.1",
     "@rollup/plugin-alias": "^3.1.9",
-    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
     "babel-jest": "27.0.6",
     "babel-loader": "^8.2.5",
     "babel-plugin-dynamic-import-node": "^2.3.3",
@@ -96,7 +96,7 @@
     "prettier": "2.6.2",
     "ramda": "^0.29.0",
     "remark-parse": "^10.0.1",
-    "rollup": "^2.76.0",
+    "rollup": "^4.24.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4"
