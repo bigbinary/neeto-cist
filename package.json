@@ -22,7 +22,7 @@
     "sync_with_wheel": "./.scripts/sync_with_wheel.sh",
     "test": "TZ=UTC jest --detectOpenHandles",
     "build": "NODE_ENV=production rollup --bundleConfigAsCjs -c rollup.config.js && yarn build:jsdoc",
-    "watch": "rollup -c rollup.config.js --watch",
+    "watch": "rollup --bundleConfigAsCjs -c rollup.config.js --watch",
     "build:jsdoc": "node ./.scripts/jsdoc-builder.mjs"
   },
   "engines": {
