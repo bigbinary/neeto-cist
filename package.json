@@ -26,7 +26,7 @@
     "build:jsdoc": "node ./.scripts/jsdoc-builder.mjs"
   },
   "engines": {
-    "node": ">=18.12",
+    "node": ">=22.13",
     "npm": ">=9",
     "yarn": ">=1.22"
   },
