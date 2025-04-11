@@ -4,7 +4,7 @@
 
 A collection of common utility functions used across all our
 [neeto](https://neeto.com) products. Try out the utility functions live at
-[neetoCommons REPL](https://neeto-cist.neeto.com/).
+[neetoCommons REPL](https://neeto-cist.neeto.com/). 
 
 ## Contents
   - [Installation](#installation)
