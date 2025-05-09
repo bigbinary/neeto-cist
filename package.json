@@ -1,6 +1,6 @@
 {
   "name": "@bigbinary/neeto-cist",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "./index.cjs.js",
   "module": "./index.mjs",
   "description": "A package encapsulating common utility functions used across neeto products",
