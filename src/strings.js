@@ -7,6 +7,7 @@ export const slugify = string =>
     .toString()
     .toLowerCase()
     .replace(/\s+/g, "-") // Replace spaces with -
+    .replace(/\./g, "-") // Replace dots with -
     .replace(/&/g, "-and-") // Replace & with 'and'
     .replace(/[^\w-]+/g, "") // Remove all non-word characters
     .replace(/--+/g, "-") // Replace multiple - with single -
